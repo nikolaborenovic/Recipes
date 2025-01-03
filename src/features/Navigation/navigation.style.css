@@ -1,0 +1,66 @@
+.navigation_wrapper {
+    width: 100%;
+    background-color: #00c2af;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation_holder {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_holder img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.navigation_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.navigation_links a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation_login_form {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation_login_form input {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.navigation_login_input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation_login_form button {
+    width: 100%;
+    max-width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
