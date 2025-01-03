@@ -1,0 +1,42 @@
+.recipeList_holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px 0;
+}
+
+/*One recipe CSS*/
+
+.recipe_wrapper {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.recipe_holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image_wrapper {
+    width: 100%;
+    flex: 1;
+    
+}
+
+.image_wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1; 
+}
+
+.recipe_info {
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+}
