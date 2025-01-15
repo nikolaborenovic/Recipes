@@ -1,5 +1,5 @@
 import { getAllRecipes } from '../../data/itemData';
-import Recipe from './components/recipe';
+import Recipe from '../components/Recipe/recipe';
 import './list.style.css'
 import { useState, useEffect } from 'react'
 

@@ -1,4 +1,4 @@
-import '../list.style.css'
+import './recipe.style.css'
 
 const Recipe = ({image, name, ingredients, recipe}) => {
     return(
@@ -10,7 +10,7 @@ const Recipe = ({image, name, ingredients, recipe}) => {
                 <div className='recipe_info'>
                 <p>{name}</p>
                 <p>Ingredients: <span>{ingredients}</span></p>
-                <p>Recipe: <span>{recipe}</span></p>
+                <button>READ MORE</button>
                 </div>
             </div>
         </div>

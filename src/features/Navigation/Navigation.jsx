@@ -6,7 +6,10 @@ const Navigation = () => {
     return(
         <div className='navigation_wrapper'>
             <div className='navigation_holder'>
-                <img src={LogoImg}/>
+                <div className='navigation_site_logo'>
+                    <img src={LogoImg}/>
+                    <p>HEALTHY</p>
+                </div>
                 <div className='navigation_links'>
                     <Link to={{pathname: '/'}}>Home</Link>
                     <Link to={{pathname: '/list'}}>Recipe List</Link>

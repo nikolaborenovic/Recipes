@@ -11,11 +11,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.navigation_site_logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+
+}
+
+.navigation_site_logo p {
+    font-size: 24px;
 }
 
 .navigation_holder img {
     width: 100%;
-    max-width: 100px;
+    max-width: 60px;
 }
 
 .navigation_links {
@@ -63,4 +77,5 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    background-color: #f9ca24;
 }

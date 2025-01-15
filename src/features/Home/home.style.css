@@ -1,0 +1,106 @@
+.home_holder{
+    margin: 0px;
+}
+
+/*Section One CSS start*/
+
+.sectionOne_holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #00c2af;
+}
+
+.sectionOne_wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sectionOne_info{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sectionOne_info h2{
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    font-size: 36px;
+    margin: 0px;
+    border-bottom: 1px solid #f9ca24;
+    padding-bottom: 20px;
+}
+
+.sectionOne_info p {
+    color: white;
+    line-height: 24px;
+    margin: 0px;
+}
+
+.sectionOne_info_p {
+    color: #f9ca24;
+}
+
+.sectionOne_button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sectionOne_button button{
+    width: 100%;
+    height: 40px;
+    max-width: 150px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f9ca24;
+    cursor: pointer;
+    color: black;
+    padding: 5px;
+}
+
+.sectionOne_button button:hover{
+    background-color: black;
+    color: #f9ca24;
+}
+
+.sectionOne_image {
+    background-color: #f9ca24;
+    border-radius: 70%;
+}
+
+/* Section Two CSS start*/
+
+.sectionTwo_holder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sectionTwo_wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTwo_featuredItems{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px 0;
+}
