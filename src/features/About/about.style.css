@@ -1,0 +1,42 @@
+.about_holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(136, 239, 230) 0%, rgba(0,194,175,1) 40%, rgba(4,124,113,1) 100%);
+}
+
+.about_wrapper{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about_textIntro{
+    width: 100%;
+    max-width: 500px;
+}
+
+.about_siteBenefits img {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #f9ca24;
+}
+
+.about_siteBenefits{
+    width: 100%;
+    max-width: 500px;
+}
+
+.about_benefitsList{
+    display: flex;
+    flex-direction: column;
+}
+
+.about_benefit{
+    display: flex;
+    align-items: center;
+}
