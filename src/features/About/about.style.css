@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(90deg, rgba(136, 239, 230) 0%, rgba(0,194,175,1) 40%, rgba(4,124,113,1) 100%);
+    background: linear-gradient(90deg, rgb(90, 241, 228) 0%, rgba(0,194,175,1) 40%, rgba(4,124,113,1) 100%);
 }
 
 .about_wrapper{
@@ -18,25 +18,81 @@
 .about_textIntro{
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.about_siteBenefits img {
+.about_textIntro h2 {
+    margin: 0px;
+    color: white;
+    font-size: 32px;
+}
+
+.about_textIntro span{
+    color: #f9ca24;
+}
+
+.about_textIntro p{
+    margin: 0px;
+    color: white;
+    line-height: 24px;
+}
+
+.about_textIntro img {
     width: 100%;
     max-width: 500px;
     border: 1px solid #f9ca24;
 }
+/*About Right Side CSS*/
 
 .about_siteBenefits{
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid #f9ca24;
+    padding-left: 30px;
+}
+
+.about_siteBenefits h2{
+    margin: 0px;
+    font-size: 28px;
+    color: white;
+}
+
+.about_siteBenefits span{
+    color: #f9ca24;
 }
 
 .about_benefitsList{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .about_benefit{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.about_benefit dd{
+    max-width: 350px;
+    line-height: 24px;
+}
+
+.about_benefit dt{
+    text-decoration: underline;
+    text-decoration-color: #f9ca24;
+}
+
+.about_siteBenefits button {
+    width: 100%;
+    max-width: 120px;
+    height: 30px;
+    background-color: #f9ca24;
+    border: none;
+    border-radius: 20px;
 }

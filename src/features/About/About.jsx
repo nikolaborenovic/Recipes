@@ -6,12 +6,13 @@ const About = () => {
         <div className='about_holder'>
             <div className='about_wrapper'>
                     <div className='about_textIntro'>
-                        <h2>Welcome to Healthy Delights!</h2>
+                        <h2>Welcome to <span>Healthy Delights!</span></h2>
+                        <img src={AboutImg}/>
                         <p>This is your go-to destination for delicious, nutritious recipes that fuel your body and delight your taste buds.</p>
                         <p>We believe that eating healthy shouldn’t mean sacrificing flavor or enjoyment. Our mission is to empower you with simple, wholesome recipes made from fresh, natural ingredients. Whether you’re a seasoned chef or a kitchen newbie, our step-by-step guides and creative meal ideas make it easy to cook nutritious meals for yourself and your loved ones.</p>
                     </div>
                     <div className='about_siteBenefits'>
-                        <h2>Why Choose Healthy Delights?</h2>
+                        <h2>Why Choose <span>Healthy Delights?</span></h2>
                         <dl className='about_benefitsList'>
                             <div className='about_benefit'>
                                 <dt>Nutrition:</dt>
@@ -30,7 +31,7 @@ const About = () => {
                                 <dd>Life is busy, so our recipes are created to fit your schedule, with plenty of options ready in under 30 minutes.</dd>
                             </div>
                         </dl>
-                        <img src={AboutImg}/>
+                        <button>BROWSE NOW</button>
                     </div>
             </div>
         </div>
