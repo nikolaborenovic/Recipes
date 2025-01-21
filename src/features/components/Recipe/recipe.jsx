@@ -1,6 +1,6 @@
 import './recipe.style.css'
 
-const Recipe = ({image, name, ingredients, recipe}) => {
+const Recipe = ({image, name, ingredients}) => {
     return(
         <div className='recipe_wrapper'>
             <div className='recipe_holder'>

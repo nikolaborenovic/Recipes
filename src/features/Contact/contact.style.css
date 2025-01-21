@@ -22,6 +22,42 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    border-right: 1px solid #f9ca24;
+    padding-right: 30px;
+}
+
+.contact_comment_newsletter h2{
+    margin: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+.contact_comment_newsletterEmail{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    gap: 10px;
+}
+
+.contact_comment_newsletterEmail input{
+    flex: 1;
+    border-radius: 10px;
+    border: 2px solid #f9ca24;
+}
+
+.contact_comment_newsletterEmail button{
+    border-radius: 20px;
+    border: none;
+    background-color: #f9ca24;
+}
+
+.contact_commentForm button{
+    width: 100%;
+    height: 30px;
+    max-width: 150px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f9ca24;
 }
 
 .contact_commentForm{
@@ -29,6 +65,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.contact_commentForm span{
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-color: #f9ca24;
 }
 
 .contact_name_input{
@@ -39,13 +82,14 @@
 
 .contact_name_input input{
     border: 2px solid #f9ca24;
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 30px;
 }
 
 .contact_comment_input{
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 150px;
 }
 
 .contact_comment_input textarea{
@@ -54,14 +98,71 @@
     border-radius: 10px;
 }
 
+/*Contact Right Side CSS*/
+
+.contact_info_socials{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #f9ca24;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact_info_socials h2{
+    margin: 0px;
+    font-size: 30px;
+    color: #00c2af;
+}
+
+.contact_info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_info p{
+    color: white;
+}
+
 .contact_info img{
     width: 100%;
     max-width: 40px;
     border-radius: 50%;
 }
 
+.contact_socialsHolder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_socialsHolder h3{
+    color: white;
+}
+
+.contact_socialsHolder span{
+    color: #00c2af;
+}
+
+.contact_socialLinks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .contact_socialLinks img{
     width: 100%;
     max-width: 40px;
     border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #00c2af;
 }

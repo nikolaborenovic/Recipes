@@ -12,7 +12,7 @@ const Contact = () => {
             <div className='contact_wrapper'>
                 <div className='contact_comment_newsletter'>
                     <h2>Subscribe to our newsletter and leave a comment!</h2>
-                    <div>
+                    <div className='contact_comment_newsletterEmail'>
                         <input type='text' placeholder='Enter email here'/>
                         <button>SUBSCRIBE</button>
                     </div>
@@ -25,6 +25,7 @@ const Contact = () => {
                             <span>Comment</span>
                             <textarea typeof='text' placeholder='Enter your comment!'/>
                         </label>
+                        <button>POST COMMENT</button>
                     </form>
                 </div>
                 <div className='contact_info_socials'>
@@ -44,7 +45,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contact_socialsHolder'>
-                        <h3>Check out our social networks:</h3>
+                        <h3>Check out our <span>social networks!</span></h3>
                         <div className='contact_socialLinks'>
                             <img src={ContactFBImg}/>
                             <img src={ContactIGImg}/>

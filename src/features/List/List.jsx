@@ -16,15 +16,16 @@ const List = () => {
 
     return(
         <div className='recipeList_holder'>
-            {list.map((item) => (
-                <Recipe
-                key={item.id}
-                image={item.image}
-                name={item.name}
-                ingredients={item.ingredients}
-                recipe={item.recipe}
-                />
-            ))}
+            <div className='recipeList_wrapper'>
+                {list.map((item) => (
+                    <Recipe
+                    key={item.id}
+                    image={item.image}
+                    name={item.name}
+                    ingredients={item.ingredients}
+                    />
+                ))}
+            </div>
         </div>
     )
 }
