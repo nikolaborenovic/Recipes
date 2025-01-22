@@ -85,7 +85,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    
+    background-color: #f9ca24;
+    background: linear-gradient(90deg, rgba(254,217,87,1) 0%, rgba(249,202,36,1) 35%, rgba(223,177,14,1) 100%);
 }
 
 .sectionTwo_wrapper {
@@ -95,6 +96,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sectionTwo_wrapper h2{
+    color: white;
+}
+
+.sectionTwo_headerSpan{
+    background-color: #00c2af;
+    border-radius: 40px;
+    padding: 5px 10px;
+    color: #f9ca24;
 }
 
 .sectionTwo_featuredItems{

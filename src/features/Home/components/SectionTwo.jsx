@@ -1,28 +1,33 @@
 import { useEffect, useState } from 'react'
 import '../home.style.css'
-import { getAllRecipes } from '../../../data/itemData'
 import Recipe from '../../components/Recipe/recipe'
+import axios from 'axios'
 
 const SectionTwo = () => {
     const [sectionTwoContent, setSectionTwoContent] = useState([])
     useEffect (() => {
-            getAllRecipes().then((response) => {
-                setSectionTwoContent(response.splice(0, 4))
-            })
+        axios
+        .get('https://dummyjson.com/recipes').then((response) =>{
+            setSectionTwoContent(response.data.recipes.splice(0,4))
+        }).catch((error) =>{
+            console.log(error, 'ERROR')
+          })
         }, [])
         console.log(sectionTwoContent)
     return(
         <div className='sectionTwo_holder'>
             <div className='sectionTwo_wrapper'>
-                <h2>Featured recipes, easy and fun:</h2>
+                <h2>Featured recipes, <span className='sectionTwo_headerSpan'>easy and fun:</span></h2>
                 <div className='sectionTwo_featuredItems'>
-                    {sectionTwoContent.map((item) => (
+                    {sectionTwoContent.map((listItem) => (
                         <Recipe
-                        key={item.id}
-                        image={item.image}
-                        name={item.name}
-                        ingredients={item.ingredients}
-                        recipe={item.recipe}
+                        key={listItem.id}
+                        image={listItem.image}
+                        name={listItem.name}
+                        prepTime={listItem.prepTimeMinutes}
+                        cookTime={listItem.cookTimeMinutes}
+                        rating={listItem.rating}
+                        calories={listItem.caloriesPerServing}
                         />
                     ))}
                 </div>
