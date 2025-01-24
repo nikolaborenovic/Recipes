@@ -81,37 +81,84 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background: linear-gradient(90deg, rgba(90, 241, 228) 0%, rgba(0,194,175,1) 40%, rgba(4,124,113,1) 100%);
 }
 
 .oneRecipe_wrapper{
     width: 100%;
     max-width: 1200px;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+
+.oneRecipe_wrapper h2{
+    margin: 0px;
+    color: white;
+    border-bottom: 1px solid #f9ca24;
+    margin-top: 20px;
 }
 
 .oneRecipe_imgInfo{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.oneRecipe_imgInfo img{
+.oneRecipe_mealImg{
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
+    border-radius: 20px;
+    border: 5px solid #f9ca24;
 }
 
 .oneRecipe_info{
     width: 100%;
-    max-width: 500px;
-    border: 1px solid black;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid #f9ca24;
+    border-right: 1px solid #f9ca24;
+    padding: 0px 30px;
+}
+
+.oneRecipe_info_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px dotted #f9ca24;
+}
+
+.oneRecipe_info_details p{
+    margin: 0px;
+}
+
+.chef_img{
+    width: 100%;
+    max-width: 400px;
 }
 
 .oneRecipe_ingredients_instructions{
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     gap: 30px;
+}
+
+.oneRecipe_ingredients_instructions p{
+    margin: 0px;
+    width: 100%;
+    max-width: 500px;
+    color: #039183;
+    background-color: #f9ca24;
+    padding: 10px 30px;
+    border-radius: 20px;
+    line-height: 24px;
 }
