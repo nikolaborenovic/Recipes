@@ -1,6 +1,9 @@
 import './recipe.style.css'
 
+
 const Recipe = ({image, name, prepTime, cookTime, rating, calories}) => {
+    
+
     return(
         <div className='recipe_wrapper'>
             <div className='recipe_holder'>
@@ -19,7 +22,7 @@ const Recipe = ({image, name, prepTime, cookTime, rating, calories}) => {
                             <p><span>Calories:</span>  {calories}</p>
                         </div>
                     </div>
-                    <button>READ MORE</button>
+                    
                 </div>
             </div>
         </div>

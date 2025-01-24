@@ -87,12 +87,3 @@
     text-decoration: underline;
     text-decoration-color: #f9ca24;
 }
-
-.about_siteBenefits button {
-    width: 100%;
-    max-width: 120px;
-    height: 30px;
-    background-color: #f9ca24;
-    border: none;
-    border-radius: 20px;
-}

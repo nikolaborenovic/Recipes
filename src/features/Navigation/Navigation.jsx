@@ -1,6 +1,7 @@
 import './navigation.style.css'
 import LogoImg from '../../assets/logoRecipe.png'
 import { Link } from 'react-router-dom'
+import Button from '../components/Button/Button'
 
 const Navigation = () => {
     return(
@@ -23,7 +24,10 @@ const Navigation = () => {
                             <input type='text' name='siteLogin_pw' placeholder='Password'/>
                         </div>
                     </label>
-                    <button>Login</button>
+                    <Button
+                    buttonText='Log in'
+                    buttonColour='#f9ca24'
+                    />
                 </form>
             </div>
         </div>

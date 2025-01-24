@@ -27,3 +27,16 @@
     background-color: #f9ca24;
     border-radius: 20px;
 }
+
+.recipeList_oneRecipe{
+    background-color: #00c2af;
+    border-radius: 20px;
+}
+
+.recipeList_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+

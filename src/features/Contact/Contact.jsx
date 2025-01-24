@@ -5,6 +5,7 @@ import ContactAddressImg from '../../assets/location.png'
 import ContactFBImg from '../../assets/fb.png'
 import ContactIGImg from '../../assets/ig.jpg'
 import ContactTWImg from '../../assets/tw.png'
+import Button from '../components/Button/Button'
 
 const Contact = () => {
     return(
@@ -14,7 +15,10 @@ const Contact = () => {
                     <h2>Subscribe to our newsletter and leave a comment!</h2>
                     <div className='contact_comment_newsletterEmail'>
                         <input type='text' placeholder='Enter email here'/>
-                        <button>SUBSCRIBE</button>
+                        <Button
+                        buttonText='SUBSCRIBE'
+                        buttonColour='#f9ca24'
+                        />
                     </div>
                     <form className='contact_commentForm'>
                         <label className='contact_name_input'>
@@ -25,7 +29,10 @@ const Contact = () => {
                             <span>Comment</span>
                             <textarea typeof='text' placeholder='Enter your comment!'/>
                         </label>
-                        <button>POST COMMENT</button>
+                        <Button
+                        buttonText='POST REVIEW'
+                        buttonColour='#f9ca24'
+                        />
                     </form>
                 </div>
                 <div className='contact_info_socials'>

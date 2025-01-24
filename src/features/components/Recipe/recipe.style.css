@@ -40,14 +40,6 @@
     margin: 0px;
 }
 
-.recipe_info button{
-    width: 100%;
-    height: 30px;
-    max-width: 100px;
-    border-radius: 20px;
-    background-color: #f9ca24;
-}
-
 .recipe_infoName{
     width: 100%;
     color: white;
@@ -80,4 +72,46 @@
     padding: 5px;
     border-radius: 10px;
     color: #403f3f;
+}
+
+/*One Recipe details CSS start*/
+
+.oneRecipe_holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.oneRecipe_wrapper{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.oneRecipe_imgInfo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.oneRecipe_imgInfo img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.oneRecipe_info{
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid black;
+}
+
+.oneRecipe_ingredients_instructions{
+    width: 100%;
+    display: flex;
+    gap: 30px;
 }

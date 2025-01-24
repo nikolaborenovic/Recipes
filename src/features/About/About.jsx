@@ -1,7 +1,14 @@
 import './about.style.css'
 import AboutImg from '../../assets/about.png'
+import Button from '../components/Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+    const navigate = useNavigate();
+    const handleRedirect = (route) => {
+        navigate(route)
+    }
+
     return(
         <div className='about_holder'>
             <div className='about_wrapper'>
@@ -31,7 +38,11 @@ const About = () => {
                                 <dd>Life is busy, so our recipes are created to fit your schedule, with plenty of options ready in under 30 minutes.</dd>
                             </div>
                         </dl>
-                        <button>BROWSE NOW</button>
+                        <Button
+                        buttonText='BROWSE'
+                        buttonColour='#f9ca24'
+                        buttonClick={() => handleRedirect('/list')}
+                        />
                     </div>
             </div>
         </div>

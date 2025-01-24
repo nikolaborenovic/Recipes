@@ -72,11 +72,6 @@
 }
 
 .navigation_login_form button {
-    width: 100%;
     max-width: 50px;
     height: 20px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    background-color: #f9ca24;
 }
