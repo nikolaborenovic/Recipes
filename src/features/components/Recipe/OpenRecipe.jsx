@@ -4,7 +4,7 @@ import ChefImg from '../../../assets/chef.png'
 import axios from "axios"
 import './recipe.style.css'
 
-const OpenRecipe = ({ name, image, cuisine, difficulty, prepTime, cookTime, caloriePerServe, serveCount, rating, reviewCount, ingredients, instructions }) => {
+const OpenRecipe = () => {
     const {recipeID} = useParams();
     const [oneRecipe, setOneRecipe] = useState({});
 

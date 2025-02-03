@@ -3,9 +3,16 @@ import '../home.style.css'
 import Recipe from '../../components/Recipe/recipe'
 import axios from 'axios'
 import Button from '../../components/Button/Button.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const SectionTwo = () => {
     const [sectionTwoContent, setSectionTwoContent] = useState([])
+    const navigate = useNavigate();
+
+    const handleRedirect = (route) => {
+        navigate(route)
+    }
+
     useEffect (() => {
         axios
         .get('https://dummyjson.com/recipes').then((response) =>{
@@ -31,13 +38,13 @@ const SectionTwo = () => {
                                 rating={listItem.rating}
                                 calories={listItem.caloriesPerServing}
                                 />
-                            <div className='recipeList_button'>
-                                <Button
-                                buttonText='READ MORE'
-                                buttonColour='#f9ca24'
-                                buttonClick ={() => handleRedirect(`${listItem.id}`)}
-                                />
-                            </div>
+                        <div className='recipeList_button'>
+                            <Button
+                            buttonText='READ MORE'
+                            buttonColour='#f9ca24'
+                            buttonClick ={() => handleRedirect(`${listItem.id}`)}
+                            />
+                        </div>
                         </div>
                     ))}
                 </div>
